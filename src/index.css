@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-list {
+    margin-left: 50px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #00abee;
+    font-size: 10px;
+}
