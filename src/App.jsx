@@ -59,7 +59,7 @@ export default function App() {
     return (
         <div>
             <Navbar />
-            <div className="bg-[#d9d9d9] overflow-hidden">
+            <div className="bg-[#f4f4f4] overflow-hidden">
                 {/* jumbotron */}
                 <Jumbotron />
                 {/* Features */}
