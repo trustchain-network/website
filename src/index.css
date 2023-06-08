@@ -10,3 +10,7 @@
     color: #00abee;
     font-size: 10px;
 }
+
+.containerSlider {
+    background-image: url("./assets/images/paper.jpg");
+}

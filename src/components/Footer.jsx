@@ -202,7 +202,7 @@ const Footer = () => {
                 <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
                 <div className="text-center">
                     <p className="text-sm text-center text-secondary sm:text-cente">
-                        © Copyright 2023 Trustchain
+                        © Copyright 2022, All Rights Reserved by ClarityUI
                     </p>
                 </div>
             </div>

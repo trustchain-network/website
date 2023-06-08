@@ -93,38 +93,41 @@ export default function App() {
                 {/* Dowload */}
                 <Download />
                 {/* Products */}
-                <div className="mx-[100px] md:min-w-[500px] text-center ">
-                    <h1 className="text-[32px] text-black font-medium mb-20 ">
-                        Our Products
-                    </h1>
-                    {/* <div className="absolute left-0 w-[100px] translate-x-[20px] translate-y-[120px]">
-                        <button onClick={sliderRef?.slickPrev}>
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                    </div> */}
-                    <Slider ref={setSliderRef} arrows={false} {...settings}>
-                        <div>
-                            <img src={Image1} alt="image-1" />
+                <div className="containerSlider h-[530px]">
+                    <div className="  mx-[100px] md:min-w-[500px] text-center ">
+                        <h1 className="text-2xl lg:text-[32px] text-black font-medium mb-20 ">
+                            Our Products
+                        </h1>
+                        <div className="absolute left-0 w-[100px] translate-x-[50px] translate-y-[50px] lg:translate-x-[20px] lg:translate-y-[120px]">
+                            <button onClick={sliderRef?.slickPrev}>
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
                         </div>
-                        <div>
-                            <img src={Image2} alt="image-2" />
+                        <Slider ref={setSliderRef} arrows={false} {...settings}>
+                            <div>
+                                <img src={Image1} alt="image-1" />
+                            </div>
+                            <div>
+                                <img src={Image2} alt="image-2" />
+                            </div>
+                            <div>
+                                <img src={Image2} alt="image-2" />
+                            </div>
+                            <div>
+                                <img src={Image2} alt="image-2" />
+                            </div>
+                        </Slider>
+                        <div className="absolute right-0 w-[100px] -translate-x-[10px] -translate-y-[75px] lg:-translate-x-[50px] lg:-translate-y-[150px] ">
+                            <button onClick={sliderRef?.slickNext}>
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
                         </div>
-                        <div>
-                            <img src={Image2} alt="image-2" />
-                        </div>
-                        <div>
-                            <img src={Image2} alt="image-2" />
-                        </div>
-                    </Slider>
-                    {/* <div className="absolute right-0 w-[100px] -translate-x-[50px] -translate-y-[150px] ">
-                        <button onClick={sliderRef?.slickNext}>
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                    </div> */}
+                    </div>
                 </div>
+
                 {/* Patners */}
                 <section className="text-center my-24 ">
-                    <h1 className=" text-2xl lg:text-[32px] text-black font-medium mb-6 ">
+                    <h1 className="text-2xl lg:text-[32px] text-black font-medium mb-6 ">
                         Potential Partner & Investors
                     </h1>
                     <div className="flex flex-col gap-y-10 mx-auto my-0">
