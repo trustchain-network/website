@@ -55,9 +55,9 @@ const Features = () => {
     ];
 
     return (
-        <div className="bg-white xl:mx-[120px] rounded-[50px] text-center">
+        <div className="bg-white mx-5 xl:mx-[120px] rounded-[50px] text-center">
             <h1 className=" lg:text-[32px] font-medium pt-5">Features</h1>
-            <div className="cardFeatures flex flex-col gap-y-[50px] lg:flex-row lg:flex-wrap items-center lg:gap-x-40 lg:gap-y-[70px] mx-[50px] mt-[70px] text-center h-max">
+            <div className="cardFeatures flex flex-col gap-y-[50px] items-start lg:flex-row lg:flex-wrap lg:gap-x-40 lg:gap-y-[70px] mx-[50px] mt-[70px] text-center h-max">
                 {listFeature.map((item, index, row) => {
                     if (index + 1 === row?.length) {
                         return (

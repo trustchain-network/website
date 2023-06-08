@@ -33,6 +33,32 @@ export default function App() {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2,
+                },
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
     };
 
     const ListTeam = [
@@ -71,11 +97,11 @@ export default function App() {
                     <h1 className="text-[32px] text-black font-medium mb-20 ">
                         Our Products
                     </h1>
-                    <div className="absolute">
+                    {/* <div className="absolute left-0 w-[100px] translate-x-[20px] translate-y-[120px]">
                         <button onClick={sliderRef?.slickPrev}>
                             <i class="fas fa-chevron-left"></i>
                         </button>
-                    </div>
+                    </div> */}
                     <Slider ref={setSliderRef} arrows={false} {...settings}>
                         <div>
                             <img src={Image1} alt="image-1" />
@@ -90,11 +116,11 @@ export default function App() {
                             <img src={Image2} alt="image-2" />
                         </div>
                     </Slider>
-                    <div className="absolute right-0 w-[100px] -translate-x-[50px] -translate-y-[150px] ">
+                    {/* <div className="absolute right-0 w-[100px] -translate-x-[50px] -translate-y-[150px] ">
                         <button onClick={sliderRef?.slickNext}>
                             <i class="fas fa-chevron-right"></i>
                         </button>
-                    </div>
+                    </div> */}
                 </div>
                 {/* Patners */}
                 <section className="text-center my-24 ">

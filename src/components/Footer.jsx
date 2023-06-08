@@ -20,10 +20,10 @@ const Footer = () => {
         <footer>
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
-                    <div className="mb-6 md:mb-0 max-w-xs ">
+                    <div className=" text-center lg:text-start mb-6 md:mb-0 max-w-xs ">
                         <img
                             src={Logo}
-                            className="h-10 mr-3"
+                            className="h-10 lg:mr-3 mx-auto my-0 lg:mx-0 "
                             alt="FlowBite Logo"
                         />
                         <p className="mt-4 text-secondary ">
@@ -32,7 +32,7 @@ const Footer = () => {
                             document security, and off-chain payments using
                             blockchain technology.
                         </p>
-                        <div className="flex mt-4 space-x-6 sm:mt-4">
+                        <div className="flex mt-4 space-x-6 sm:mt-4 justify-center ">
                             <a
                                 href="#"
                                 className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
@@ -202,7 +202,7 @@ const Footer = () => {
                 <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
                 <div className="text-center">
                     <p className="text-sm text-center text-secondary sm:text-cente">
-                        © Copyright 2022, All Rights Reserved by ClarityUI
+                        © Copyright 2023 Trustchain
                     </p>
                 </div>
             </div>
